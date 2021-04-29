@@ -10,6 +10,7 @@ if [ "$COVERAGE" == "true" ]; then
 fi
 
 echo " -----  selenium -----"
+ls -all /var/www/html/tests/setup/
 chmod 777 /var/www/html/tests/setup/selenium.sh
 /var/www/html/tests/setup/selenium.sh
 
