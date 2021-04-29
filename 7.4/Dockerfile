@@ -42,9 +42,6 @@ RUN curl -sS https://getcomposer.org/installer | php
 RUN mv composer.phar /usr/local/bin/composer
 RUN chmod +x /usr/local/bin/composer
 
-RUN chmod 777 /var/www/html/tests/setup/selenium.sh
-RUN /var/www/html/tests/setup/selenium.sh
-
 COPY entrypoint.sh /entrypoint.sh
 COPY cover.ini /etc/php/cover.ini
 RUN chmod 777 /entrypoint.sh
