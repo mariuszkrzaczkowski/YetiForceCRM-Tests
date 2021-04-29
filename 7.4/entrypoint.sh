@@ -9,6 +9,10 @@ if [ "$COVERAGE" == "true" ]; then
 	ln -s /etc/php/cover.ini /etc/php/$PHP_VER/fpm/conf.d/40-yetiforce-cover.ini
 fi
 
+echo " -----  selenium -----"
+chmod 777 /var/www/html/tests/setup/selenium.sh
+/var/www/html/tests/setup/selenium.sh
+
 #https://github.com/actions/cache/blob/main/examples.md#php---composer
 
 cd /var/www/html/
