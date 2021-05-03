@@ -78,7 +78,7 @@ chmod -R +r /var/log/
 cd /var/www/html/tests
 
 echo " ----- /var/www/html/vendor/bin/phpunit --verbose --colors=always --testsuite NoGUI    -----"
-/var/www/html/vendor/bin/phpunit --verbose --colors=always --log-junit '/var/www/html/tests/coverages/execution.xml' --testsuite Init,Base,Gui
+/var/www/html/vendor/bin/phpunit --verbose --colors=always --log-junit '/var/www/html/tests/coverages/execution.xml' --testsuite Init,Base,Gui,Integrations
 
 
 if [ "$COVERAGE" == "true" ]; then
